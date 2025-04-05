@@ -1,4 +1,12 @@
 
+// menuicon toggle 
+const menuIcon = document.querySelector('#menu-icon');
+const navLinks = document.querySelector('header ul');
+
+menuIcon.onclick = () => {
+    navLinks.classList.toggle('active');
+    menuIcon.classList.toggle('bx-x'); // change icon to 'X'
+}
 
 ScrollReveal({
     reset: true,
