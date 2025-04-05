@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi Website Landing Page</title>
+     <!-- box icons -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+    <section class="sec">
+        <header>
+            <a href="#"><img src="logo.png" class="logo" alt=""></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What <br> <span> I like</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, voluptate quas! Hic qui, sunt,
+                    ratione expedita tempora omnis consectetur vitae accusamus nulla placeat repellat. Nihil veniam
+                    reprehenderit, error non blanditiis rem eum repellendus omnis. A cum reprehenderit expedita dicta
+                    eveniet cumque at nulla doloremque explicabo!</p>
+                <a href="#">View All Products</a>
+
+            </div>
+            <div class="imgBox">
+                <img src="pepsi001.png" alt="Pepsi" class="pepsi">
+            </div>
+        </div>
+        <ul class="morepepsies">
+            <li><img src="pepsi001.png" onclick="imgslider('pepsi001.png');changebg('#0062be')"  alt=""></li>
+            <li><img src="pepsi002.png" onclick="imgslider('pepsi002.png');changebg('#e60c2c')" alt=""></li>
+            <li><img src="pepsi003.png" onclick="imgslider('pepsi003.png');changebg('#1e1e1e')" alt=""></li>
+        </ul>
+        <div class="socialmedia">
+            <li><a href="#"><img src="facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="instagram.png" alt=""></a></li>
+        </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal" ></script>
+    <script type="text/javascript">
+        function imgslider(morepepsiesimg){
+            document.querySelector(".pepsi").src= morepepsiesimg
+        }
+        function changebg(color) {
+            const sec = document.querySelector('.sec')
+            sec.style.background = color;
+        }
+    </script>
+     <!-- scroll reveal  -->
+     <script src="script.js"></script>
+</body>
+
+</html>
